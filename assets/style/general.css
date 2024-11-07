@@ -1,0 +1,40 @@
+.primary-color{color: #00b4d9;}
+
+   #logo {
+    padding: 0 0 0 0px;
+  }
+  
+  .navbar-theme {
+    color: #fff !important;
+    background-color: #03045E;
+  }
+
+  .sbar-theme {
+    color: #fff !important;
+    background-color: #0077B6 !important;
+  }
+
+  .text-teal {
+    color: #00b4d9;
+  }
+
+  img {
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    width: 75%;
+  }
+
+  .footer-theme-l1 {
+    color: #fff;
+    background-color: #00b4d9;
+  }
+
+  .footer-theme-l2 {
+    color: #fff;
+    background-color: #03045E !important;
+  }
+
+  #myFooter a:hover {
+    color: aqua;
+  }

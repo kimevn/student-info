@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IT4409 Công nghệ web và dịch vụ trực tuyến</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/style/general.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar navbar-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l10"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item" id="logo"><img src="./assets/images/logo.svg" alt="Logo"
+          style="width:40px;" class="rounded-pill"></a>
+      <a href="info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+      <a href="tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
+      <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left sbar-theme" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item" style="background-color: #00b4d9;"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#opening">Thông tin khai giảng</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#seminar">Thông tin seminar</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#company">Thông tin công ty quan tâm</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left: 250px">
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="opening">
+          <h1 class="text-teal">Thông tin khai giảng</h1>
+          <p>
+            LỄ KHAI GIẢNG KHỞI ĐẦU SỰ CHUYỂN MÌNH, THỊNH VƯỢNG VÀ PHÁT TRIỂN CỦA ĐẠI HỌC BÁCH KHOA HÀ NỘI
+          <p>---------------------------------</p>
+          Tin/bài: <a
+            href="https://www.hust.edu.vn/vi/news/tin-tuc-su-kien/le-khai-giang-khoi-dau-su-chuyen-minh-thinh-vuong-va-phat-trien-cua-dai-hoc-bach-khoa-ha-noi-654856.html?fbclid=IwY2xjawF_Do9leHRuA2FlbQIxMAABHfKmUBVJUJt9TijTRZxaE3sNLgxVbklYzpa7Ir2eNqBdYWfcgd_RKotlFw_aem_9sPNTQUlUlYlgfKg-k8QFg">https://www.hust.edu.vn/.../le-khai-giang-khoi-dau-su...</a>
+          <p>Sáng nay (10/9/2023), lễ khai giảng năm học mới 2023-2024 của Đại học Bách khoa Hà Nội diễn ra đầy ấn tượng
+            với lời chia sẻ đầy xúc động của PGS. Huỳnh Quyết Thắng:
+            “Chúc mừng tất cả các em tân sinh viên K68 - sinh viên khóa đầu tiên nhập học vào Đại học Bách khoa Hà Nội.
+            Với cá nhân thầy, cũng là một điều mới mẻ, lần đầu tiên thầy phát biểu diễn văn khai giảng dưới chức danh
+            Giám đốc Đại học Bách khoa Hà Nội”.
+            Lễ khai giảng năm học 2023-2024 là lễ khai giảng đầu tiên từ khi Trường Đại học Bách khoa Hà Nội được đổi
+            tên thành Đại học Bách khoa Hà Nội (12/2022), là ngày hội mang màu sắc riêng của Bách khoa Hà Nội: Nhiệt
+            huyết, khát vọng và chân thành.
+            Đây là hoạt động đáng nhớ của các sinh viên, qua đó khơi dậy niềm tự hào, ý thức trách nhiệm của các em khi
+            được học tập dưới mái nhà Đại học Bách khoa Hà Nội.</p>
+          </p>
+          <img src="./assets/images/opening.jpg" alt="Khai giang">
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <div style="overflow: hidden;
+                    border-bottom: 1px solid blue;
+                    padding: 5px;
+                    margin-top: 10px;
+                    background-color: white;
+                    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;">
+          <img style="width: 100%;
+                                padding: 5px;
+                                cursor: pointer;" src="./assets/images/game-design.jpg">
+          <div style="width: 100%;
+                                      color: blue;
+                                      text-decoration: underline;
+                                      cursor: pointer;" data-original-title="" title="">
+            <a
+              href="https://www.arena-multimedia.vn/avg/?utm_medium=paid&utm_source=fb&utm_id=120210746306640752&utm_content=120212938026530752&utm_term=120210746661860752&utm_campaign=120210746306640752&fbclid=IwY2xjawF-w6xleHRuA2FlbQEwAAEdT2JQB0tpCsJwPdMLE-OWRWV_UFxbuKaln3fwzsASXnVMv4ZKj9qHMOal_aem_Okoq-7bdRJHpY9or7uQs3w">
+              Học thiết kế game không khó như bạn nghĩ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-twothird w3-container">
+        <section id="seminar">
+          <h1 class="text-teal">Thông tin seminar</h1>
+          <p>[SOICT LUNCH SEMINAR – THÁNG 11]</p>
+          <p>✨ Nhằm chia sẻ các kết quả nghiên cứu, tăng cường giao lưu, kết nối giữa các nhóm, hoạt động Lunch Seminar
+            được tổ chức hàng tháng tại Trường CNTT&TT. Đây là cơ hội để các nhóm nghiên cứu của Nhà trường có thể chia
+            sẻ với nhau các ý tưởng, mở ra các cơ hội hợp tác và các hướng nghiên cứu mới. Hoạt động được tổ chức vào
+            buổi trưa (từ 11:30-12:30) để phù hợp với lịch làm việc của các thầy cô, tất cả các thầy cô cùng các nghiên
+            cứu sinh của SoICT có thể ngồi cùng nhau và trao đổi mà không bị hạn chế bởi việc bị trùng giờ với các buổi
+            lên lớp.</p>
+          <p>✨ Diễn ra vào ngày 29/11 vừa qua, Lunch Seminar tháng 11 đã mang đến 2 bài trình bày hấp dẫn và ý nghĩa.
+            Bài trình bày thứ nhất - An overview of NAVIS' research: GNSS and IoT platform - giới thiệu tổng quan về các
+            nghiên cứu của trung tâm NAVIS về các hệ thống định vị vệ tinh và nền tảng phần cứng cho IoT, được trình bày
+            bởi PGS.TS. Lã Thế Vinh. Tiếp theo đó, TS. Trần Thế Hùng đã tiếp tục buổi seminar với bài trình bày Offline
+            Reinforcement Learning under Distribution Shifts - học tăng cường "offline" đối mặt với thách thức của sự
+            thay đổi hàm phân phối.</p>
+          <p>✨ Sau 3 tháng triển khai, các buổi Lunch Seminar đều được tổ chức thành công tốt đẹp, mang đến nhiều ý
+            nghĩa tới thầy cô và các bạn nghiên cứu sinh tham gia. Hãy theo dõi Fanpage của Trường CNTT&TT để được cập
+            nhật về các seminar tiếp theo, hứa hẹn sẽ mang đến nhiều chủ đề thiết thực và hấp dẫn khác.</p>
+          <img src="./assets/images/seminar.jpg" alt="Seminar">
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <div style="overflow: hidden;
+                  border-bottom: 1px solid blue;
+                  padding: 5px;
+                  margin-top: 10px;
+                  background-color: white;
+                  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;">
+          <img style="width: 100%;
+                              padding: 5px;
+                              cursor: pointer;" src="./assets/images/event-xgame-2_1.0m.jpg">
+          <div style="width: 100%;
+                                    color: blue;
+                                    text-decoration: underline;
+                                    cursor: pointer;" data-original-title="" title="">
+            <a href="https://bachkhoa.ai/tin-tuc/-xgame-studio-game-jam-2024-cuoc-thi-sang-tao-game-6719162101530625">
+              [XGAME STUDIO] GAME JAM2024 - CUỘC THI SÁNG TẠO GAME
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="company">
+          <h1 class="text-teal">Thông tin công ty quan tâm</h1>
+          <p>
+            Viettel đang tuyển dụng các vị trí hấp dẫn trong lĩnh vực viễn thông và công nghệ thông tin, dành cho những
+            ứng viên đam mê công nghệ và mong muốn phát triển sự nghiệp tại một trong những tập đoàn hàng đầu Việt Nam.
+            Chúng tôi tìm kiếm các chuyên gia và nhân sự tiềm năng trong các mảng như kỹ thuật viên mạng, lập trình
+            viên, chuyên viên an ninh mạng, chuyên viên phân tích dữ liệu, và chuyên viên kinh doanh. Ứng viên sẽ có cơ
+            hội làm việc trong môi trường năng động, sáng tạo với các dự án công nghệ cao, tiếp cận những giải pháp đổi
+            mới tiên tiến và tham gia vào quá trình chuyển đổi số. Viettel luôn coi trọng sự phát triển của nhân viên,
+            mang đến những chương trình đào tạo chuyên sâu, lộ trình thăng tiến rõ ràng và chế độ đãi ngộ hấp dẫn. Nếu
+            bạn muốn trở thành một phần của đội ngũ tiên phong kiến tạo xã hội số, hãy gia nhập Viettel để cùng chúng
+            tôi tạo nên những giá trị bền vững cho tương lai.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a class="w3-button w3-blue" href="#">1</a>
+        <a class="w3-button w3-hover-blue" href="#">2</a>
+        <a class="w3-button w3-hover-blue" href="#">3</a>
+        <a class="w3-button w3-hover-blue" href="#">4</a>
+        <a class="w3-button w3-hover-blue" href="#">5</a>
+        <a class="w3-button w3-hover-blue" href="#">»</a>
+      </div>
+    </div>
+
+    <footer id="myFooter">
+      <div class="w3-container footer-theme-l1" style="padding: 8px 16px;">
+        <ul style="list-style: none; padding-left: 0px;">
+          <li><a href="home.html" style="text-decoration: none;">Trang chủ</a></li>
+          <li><a href="info.html" style="text-decoration: none;">Thông tin môn học</a></li>
+          <li><a href="tech.html" style="text-decoration: none;">Các công nghệ Web</a></li>
+          <li><a href="student.html" style="text-decoration: none;">Thông tin sinh viên</a> </li>
+        </ul>
+      </div>
+
+      <div class="w3-container footer-theme-l2">
+        <p>
+          Powered by
+          <a href="https://www.facebook.com/Kime2212" target="_blank">Phan Đức</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+        overlayBg.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

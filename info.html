@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IT4409 Công nghệ web và dịch vụ trực tuyến</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/style/general.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar navbar-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l10"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item" id="logo"><img src="./assets/images/logo.svg" alt="Logo"
+          style="width:40px;" class="rounded-pill"></a>
+      <a href="info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+      <a href="tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
+      <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l10 w3-animate-left sbar-theme" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item" style="background-color: #00b4d9;"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#general">Thông tin chung</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#purpose">Mục tiêu</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#content">Nội dung</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left: 250px">
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="text-teal">IT4409/IT4409E</h1>
+        <section id="general">
+          <p>
+            Công nghệ web và dịch vụ trực tuyến (Web technologies and
+            e-Services)
+          </p>
+          <ul>
+            <li>Khối lượng (Credits): 3(2-2-0-6)</li>
+            <li>Học phần tiên quyết (Prerequisite): Không (None)</li>
+            <li>
+              Học phần học trước (Pre-courses): (IT3090 hoặc/or IT3091) và/and
+              (IT3100 hoặc/or IT3600)
+            </li>
+            <li>Học phần song hành (Corequisite Courses): Không (None)</li>
+          </ul>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <div style="overflow: hidden;
+                border-bottom: 1px solid blue;
+                padding: 5px;
+                margin-top: 10px;
+                background-color: white;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;">
+          <img style="width: 100%;
+                            padding: 5px;
+                            cursor: pointer;" src="./assets/images/event-xgame-2_1.0m.jpg">
+          <div style="width: 100%;
+                                  color: blue;
+                                  text-decoration: underline;
+                                  cursor: pointer;" data-original-title="" title="">
+            <a href="https://bachkhoa.ai/tin-tuc/-xgame-studio-game-jam-2024-cuoc-thi-sang-tao-game-6719162101530625">
+              [XGAME STUDIO] GAME JAM2024 - CUỘC THI SÁNG TẠO GAME
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-twothird w3-container">
+        <section id="purpose">
+          <h1 class="text-teal">Mục tiêu</h1>
+          <p>
+            Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển
+            các ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học
+            xong học phần này, sinh viên có khả năng:
+          </p>
+          <ul>
+            <li>
+              Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển
+              ứng dụng web cho các lĩnh vực khác nhau như: hệ quản trị nội dung
+              (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử
+              (eCommerce, eLearning, eGoverment, v.v..)
+            </li>
+            <li>Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</li>
+          </ul>
+          <p>Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ cần thiết
+            để
+            làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.</p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <div style="overflow: hidden;
+                  border-bottom: 1px solid blue;
+                  padding: 5px;
+                  margin-top: 10px;
+                  background-color: white;
+                  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;">
+          <img style="width: 100%;
+                              padding: 5px;
+                              cursor: pointer;" src="./assets/images/game-design.jpg">
+          <div style="width: 100%;
+                                    color: blue;
+                                    text-decoration: underline;
+                                    cursor: pointer;" data-original-title="" title="">
+            <a
+              href="https://www.arena-multimedia.vn/avg/?utm_medium=paid&utm_source=fb&utm_id=120210746306640752&utm_content=120212938026530752&utm_term=120210746661860752&utm_campaign=120210746306640752&fbclid=IwY2xjawF-w6xleHRuA2FlbQEwAAEdT2JQB0tpCsJwPdMLE-OWRWV_UFxbuKaln3fwzsASXnVMv4ZKj9qHMOal_aem_Okoq-7bdRJHpY9or7uQs3w">
+              Học thiết kế game không khó như bạn nghĩ
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <section id="content">
+            <h1 class="text-teal">Nội dung</h1>
+            <p>
+              Internet, web, kiến trúc ứng dụng web, HTML, CSS, Javascript, PHP, JSP, Ajax, DOM, XML, SOA, An toàn bảo
+              mật
+              web, v.v.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-blue" href="#">1</a>
+          <a class="w3-button w3-hover-blue" href="#">2</a>
+          <a class="w3-button w3-hover-blue" href="#">3</a>
+          <a class="w3-button w3-hover-blue" href="#">4</a>
+          <a class="w3-button w3-hover-blue" href="#">5</a>
+          <a class="w3-button w3-hover-blue" href="#">»</a>
+        </div>
+      </div>
+
+      <footer id="myFooter">
+        <div class="w3-container footer-theme-l1" style="padding: 8px 16px;">
+          <ul style="list-style: none; padding-left: 0px;">
+            <li><a href="home.html" style="text-decoration: none;">Trang chủ</a></li>
+            <li><a href="info.html" style="text-decoration: none;">Thông tin môn học</a></li>
+            <li><a href="tech.html" style="text-decoration: none;">Các công nghệ Web</a></li>
+            <li><a href="student.html" style="text-decoration: none;">Thông tin sinh viên</a> </li>
+          </ul>
+        </div>
+
+        <div class="w3-container footer-theme-l2">
+          <p>
+            Powered by
+            <a href="https://www.facebook.com/Kime2212" target="_blank">Phan Đức</a>
+          </p>
+        </div>
+      </footer>
+
+      <!-- END MAIN -->
+    </div>
+
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+          overlayBg.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+    </script>
+</body>
+
+</html>

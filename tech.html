@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IT4409 Công nghệ web và dịch vụ trực tuyến</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/style/general.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar navbar-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l10"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item" id="logo"><img src="./assets/images/logo.svg" alt="Logo"
+          style="width:40px;" class="rounded-pill"></a>
+      <a href="info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+      <a href="tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
+      <a href="student.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left sbar-theme" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item" style="background-color: #00b4d9;"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#React">React</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#Angular">Angular</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#Vue.js">Vue.js</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#Django">Django</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="#Express.js">Express.js</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left: 250px">
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="React">
+          <h1 class="text-teal">React</h1>
+          <p>
+            React là một thư viện JavaScript được phát triển bởi Facebook,
+            chuyên dùng để xây dựng giao diện người dùng (UI). Nó cho phép các
+            lập trình viên xây dựng các thành phần UI có thể tái sử dụng và cập
+            nhật nhanh chóng khi dữ liệu thay đổi. React sử dụng mô hình lập
+            trình dựa trên thành phần (component-based), giúp chia nhỏ giao diện
+            thành các phần nhỏ và độc lập, dễ dàng bảo trì và mở rộng. Ngoài ra,
+            React sử dụng Virtual DOM để cải thiện hiệu suất, giúp cập nhật UI
+            mượt mà hơn.
+          </p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <div style="overflow: hidden;
+                    border-bottom: 1px solid blue;
+                    padding: 5px;
+                    margin-top: 10px;
+                    background-color: white;
+                    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;">
+          <img style="width: 100%;
+                                padding: 5px;
+                                cursor: pointer;" src="./assets/images/game-design.jpg">
+          <div style="width: 100%;
+                                      color: blue;
+                                      text-decoration: underline;
+                                      cursor: pointer;" data-original-title="" title="">
+            <a
+              href="https://www.arena-multimedia.vn/avg/?utm_medium=paid&utm_source=fb&utm_id=120210746306640752&utm_content=120212938026530752&utm_term=120210746661860752&utm_campaign=120210746306640752&fbclid=IwY2xjawF-w6xleHRuA2FlbQEwAAEdT2JQB0tpCsJwPdMLE-OWRWV_UFxbuKaln3fwzsASXnVMv4ZKj9qHMOal_aem_Okoq-7bdRJHpY9or7uQs3w">
+              Học thiết kế game không khó như bạn nghĩ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-twothird w3-container">
+        <section id="Angular">
+          <h1 class="text-teal">Angular</h1>
+          <p>
+            Angular là một framework JavaScript mạnh mẽ do Google phát triển,
+            chủ yếu được sử dụng để xây dựng các ứng dụng web một trang (Single
+            Page Applications - SPA). Angular sử dụng TypeScript, một phiên bản
+            mở rộng của JavaScript, để phát triển các ứng dụng lớn và phức tạp
+            với mã nguồn dễ quản lý. Với khả năng hai chiều (two-way data
+            binding), Angular cho phép tự động cập nhật dữ liệu giữa mô hình và
+            giao diện, giúp đồng bộ hóa trạng thái ứng dụng một cách hiệu quả.
+          </p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <div style="overflow: hidden;
+                  border-bottom: 1px solid blue;
+                  padding: 5px;
+                  margin-top: 10px;
+                  background-color: white;
+                  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;">
+          <img style="width: 100%;
+                              padding: 5px;
+                              cursor: pointer;" src="./assets/images/event-xgame-2_1.0m.jpg">
+          <div style="width: 100%;
+                                    color: blue;
+                                    text-decoration: underline;
+                                    cursor: pointer;" data-original-title="" title="">
+            <a href="https://bachkhoa.ai/tin-tuc/-xgame-studio-game-jam-2024-cuoc-thi-sang-tao-game-6719162101530625">
+              [XGAME STUDIO] GAME JAM2024 - CUỘC THI SÁNG TẠO GAME
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="Vue.js">
+          <h1 class="text-teal">Vue.js</h1>
+          <p>
+            Vue.js là một framework JavaScript nhẹ và dễ học, tập trung vào việc
+            xây dựng giao diện người dùng. Vue được thiết kế để dễ dàng tích hợp
+            vào các dự án hiện có và cung cấp khả năng tương tự như React và
+            Angular, nhưng với cách tiếp cận đơn giản hơn. Vue hỗ trợ lập trình
+            dựa trên thành phần, quản lý trạng thái, và cung cấp hệ thống theo
+            dõi thay đổi tinh tế, giúp tối ưu hóa hiệu suất khi cập nhật giao
+            diện.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="Django">
+          <h1 class="text-teal">Django</h1>
+          <p>
+            Django là một framework web mạnh mẽ dựa trên ngôn ngữ lập trình
+            Python, được thiết kế để phát triển các ứng dụng web nhanh chóng và
+            an toàn. Django tuân theo nguyên tắc "Không lặp lại chính mình"
+            (Don't Repeat Yourself - DRY), giúp giảm thiểu mã nguồn trùng lặp.
+            Nó cung cấp một hệ sinh thái hoàn chỉnh với các công cụ quản lý cơ
+            sở dữ liệu, xác thực người dùng, và bảo mật tích hợp sẵn. Django rất
+            phù hợp cho các dự án web có quy mô lớn, như trang thương mại điện
+            tử hay mạng xã hội
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="Express.js">
+          <h1 class="text-teal">Express.js</h1>
+          <p>
+            Express.js là một framework web tối giản và linh hoạt cho Node.js,
+            được sử dụng rộng rãi để phát triển các ứng dụng web và API. Với cấu
+            trúc nhẹ nhàng, Express cho phép lập trình viên xây dựng ứng dụng
+            một cách nhanh chóng và dễ dàng tùy chỉnh theo nhu cầu cụ thể.
+            Express tích hợp tốt với các công cụ khác của hệ sinh thái Node.js,
+            và thường được sử dụng để phát triển các ứng dụng theo kiến trúc
+            microservices hoặc các dịch vụ backend đơn giản.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a class="w3-button w3-blue" href="#">1</a>
+        <a class="w3-button w3-hover-blue" href="#">2</a>
+        <a class="w3-button w3-hover-blue" href="#">3</a>
+        <a class="w3-button w3-hover-blue" href="#">4</a>
+        <a class="w3-button w3-hover-blue" href="#">5</a>
+        <a class="w3-button w3-hover-blue" href="#">»</a>
+      </div>
+    </div>
+
+    <footer id="myFooter">
+      <div class="w3-container footer-theme-l1" style="padding: 8px 16px;">
+        <ul style="list-style: none; padding-left: 0px;">
+          <li><a href="home.html" style="text-decoration: none;">Trang chủ</a></li>
+          <li><a href="info.html" style="text-decoration: none;">Thông tin môn học</a></li>
+          <li><a href="tech.html" style="text-decoration: none;">Các công nghệ Web</a></li>
+          <li><a href="student.html" style="text-decoration: none;">Thông tin sinh viên</a> </li>
+        </ul>
+      </div>
+
+      <div class="w3-container footer-theme-l2">
+        <p>
+          Powered by
+          <a href="https://www.facebook.com/Kime2212" target="_blank">Phan Đức</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+        overlayBg.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
